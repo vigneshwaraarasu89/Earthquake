@@ -7,10 +7,8 @@ Created on Fri Jan  7 20:57:11 2022
 
 import requests
 from flask import Flask, jsonify, request
-import re
 import sys
 from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
 import json
 import datetime
 
