@@ -23,7 +23,7 @@ def earthquake():
         enddate = request.args.get("enddate")
         minmagnitude = request.args.get("minmagnitude")
         url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson"
-        geolocator = Nominatim(user_agent="myGeocoder")
+        geolocator = Nominatim(user_agent="earthquake-api-all")
         location = geolocator.geocode(city)
         latitude = location.latitude
         longitude = location.longitude
